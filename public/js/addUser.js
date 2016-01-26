@@ -19,7 +19,7 @@ function addUser(){
   var info = $info.val();
   $.post('/users', {name: name, email: email, info: info})
   .success(function(data) {
-    location.replace('/');
+    location.href = '/';
   })
   .fail(function(err) {
     alert('Error. Check console. *_*');
