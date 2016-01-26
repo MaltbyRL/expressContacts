@@ -1,0 +1,21 @@
+extends layout
+
+block content
+ 
+ .container
+   h1= title
+   .form-group
+     label(for='name') Name
+     input#name.form-control(type='text', placeholder="Contact Name")
+   .form-group
+     label(for="email") Email
+     input#email.form-control(type='text', placeholder="Contact Email")
+   .form-group
+     label(for="info") Info
+     input#info.form-control(type='text', placeholder="Additional Info")
+   button.btn.btn-success#add(type="submit") Create
+   a.btn.btn-danger(href='/') Back
+ 
+ block scripts
+   script(src='js/addUser.js')
+  
